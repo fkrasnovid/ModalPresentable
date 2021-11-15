@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		786BD8592742ADB800329254 /* ModalPresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 786BD8582742ADB700329254 /* ModalPresentable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		786BD87D2742B0C200329254 /* ModalPresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8612742B0C100329254 /* ModalPresentationState.swift */; };
+		786BD87E2742B0C200329254 /* StateY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8622742B0C100329254 /* StateY.swift */; };
+		786BD87F2742B0C200329254 /* ModalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8632742B0C100329254 /* ModalHeight.swift */; };
+		786BD8802742B0C200329254 /* UIViewController+ModalPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8642742B0C100329254 /* UIViewController+ModalPresentable.swift */; };
+		786BD8812742B0C200329254 /* ModalPresentable+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8652742B0C100329254 /* ModalPresentable+Defaults.swift */; };
+		786BD8822742B0C200329254 /* ModalPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8662742B0C100329254 /* ModalPresentable.swift */; };
+		786BD8832742B0C200329254 /* ModalPresentable+LayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8672742B0C200329254 /* ModalPresentable+LayoutHelpers.swift */; };
+		786BD8842742B0C200329254 /* ModalPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8692742B0C200329254 /* ModalPresentationDelegate.swift */; };
+		786BD8852742B0C200329254 /* ModalContentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD86B2742B0C200329254 /* ModalContentContainer.swift */; };
+		786BD8862742B0C200329254 /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD86C2742B0C200329254 /* PanContainerView.swift */; };
+		786BD8872742B0C200329254 /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD86D2742B0C200329254 /* DimmedView.swift */; };
+		786BD8882742B0C200329254 /* ModalBackgroundColorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD86E2742B0C200329254 /* ModalBackgroundColorSpec.swift */; };
+		786BD8892742B0C200329254 /* DragIndicatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8702742B0C200329254 /* DragIndicatorModel.swift */; };
+		786BD88A2742B0C200329254 /* ModalPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8722742B0C200329254 /* ModalPresentationAnimator.swift */; };
+		786BD88B2742B0C200329254 /* ModalTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8732742B0C200329254 /* ModalTransitionStyle.swift */; };
+		786BD88C2742B0C200329254 /* ModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8742742B0C200329254 /* ModalAnimator.swift */; };
+		786BD88D2742B0C200329254 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8762742B0C200329254 /* ModalPresentationController.swift */; };
+		786BD88E2742B0C200329254 /* UIView+ModalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8782742B0C200329254 /* UIView+ModalExtension.swift */; };
+		786BD88F2742B0C200329254 /* UIViewController+ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8792742B0C200329254 /* UIViewController+ModalPresenter.swift */; };
+		786BD8902742B0C200329254 /* UIScrollView+ModalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD87A2742B0C200329254 /* UIScrollView+ModalExtension.swift */; };
+		786BD8912742B0C200329254 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD87C2742B0C200329254 /* ModalPresenter.swift */; };
+		786BD89A2742B36D00329254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD8992742B36D00329254 /* AppDelegate.swift */; };
+		786BD89E2742B36D00329254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BD89D2742B36D00329254 /* ViewController.swift */; };
+		786BD8A32742B37000329254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786BD8A22742B37000329254 /* Assets.xcassets */; };
+		786BD8A62742B37000329254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786BD8A42742B37000329254 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		786BD8552742ADB700329254 /* ModalPresentable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModalPresentable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786BD8582742ADB700329254 /* ModalPresentable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalPresentable.h; sourceTree = "<group>"; };
+		786BD85F2742AF7D00329254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786BD8612742B0C100329254 /* ModalPresentationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationState.swift; sourceTree = "<group>"; };
+		786BD8622742B0C100329254 /* StateY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateY.swift; sourceTree = "<group>"; };
+		786BD8632742B0C100329254 /* ModalHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalHeight.swift; sourceTree = "<group>"; };
+		786BD8642742B0C100329254 /* UIViewController+ModalPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ModalPresentable.swift"; sourceTree = "<group>"; };
+		786BD8652742B0C100329254 /* ModalPresentable+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModalPresentable+Defaults.swift"; sourceTree = "<group>"; };
+		786BD8662742B0C100329254 /* ModalPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentable.swift; sourceTree = "<group>"; };
+		786BD8672742B0C200329254 /* ModalPresentable+LayoutHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModalPresentable+LayoutHelpers.swift"; sourceTree = "<group>"; };
+		786BD8692742B0C200329254 /* ModalPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationDelegate.swift; sourceTree = "<group>"; };
+		786BD86B2742B0C200329254 /* ModalContentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalContentContainer.swift; sourceTree = "<group>"; };
+		786BD86C2742B0C200329254 /* PanContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanContainerView.swift; sourceTree = "<group>"; };
+		786BD86D2742B0C200329254 /* DimmedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
+		786BD86E2742B0C200329254 /* ModalBackgroundColorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalBackgroundColorSpec.swift; sourceTree = "<group>"; };
+		786BD8702742B0C200329254 /* DragIndicatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragIndicatorModel.swift; sourceTree = "<group>"; };
+		786BD8722742B0C200329254 /* ModalPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationAnimator.swift; sourceTree = "<group>"; };
+		786BD8732742B0C200329254 /* ModalTransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionStyle.swift; sourceTree = "<group>"; };
+		786BD8742742B0C200329254 /* ModalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalAnimator.swift; sourceTree = "<group>"; };
+		786BD8762742B0C200329254 /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		786BD8782742B0C200329254 /* UIView+ModalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ModalExtension.swift"; sourceTree = "<group>"; };
+		786BD8792742B0C200329254 /* UIViewController+ModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ModalPresenter.swift"; sourceTree = "<group>"; };
+		786BD87A2742B0C200329254 /* UIScrollView+ModalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ModalExtension.swift"; sourceTree = "<group>"; };
+		786BD87C2742B0C200329254 /* ModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
+		786BD8972742B36D00329254 /* ModalPresentableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalPresentableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		786BD8992742B36D00329254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		786BD89D2742B36D00329254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		786BD8A22742B37000329254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		786BD8A52742B37000329254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		786BD8A72742B37000329254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		786BD8522742ADB700329254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786BD8942742B36D00329254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		786BD84B2742ADB700329254 = {
+			isa = PBXGroup;
+			children = (
+				786BD8572742ADB700329254 /* ModalPresentable */,
+				786BD8982742B36D00329254 /* ModalPresentableExample */,
+				786BD8562742ADB700329254 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		786BD8562742ADB700329254 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8552742ADB700329254 /* ModalPresentable.framework */,
+				786BD8972742B36D00329254 /* ModalPresentableExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		786BD8572742ADB700329254 /* ModalPresentable */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8922742B0C800329254 /* Support Files */,
+				786BD8712742B0C200329254 /* Animator */,
+				786BD8752742B0C200329254 /* Controller */,
+				786BD8682742B0C200329254 /* Delegate */,
+				786BD8772742B0C200329254 /* Extensions */,
+				786BD86F2742B0C200329254 /* Models */,
+				786BD8602742B0C100329254 /* Presentable */,
+				786BD87B2742B0C200329254 /* Presenter */,
+				786BD86A2742B0C200329254 /* View */,
+			);
+			path = ModalPresentable;
+			sourceTree = "<group>";
+		};
+		786BD8602742B0C100329254 /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8612742B0C100329254 /* ModalPresentationState.swift */,
+				786BD8622742B0C100329254 /* StateY.swift */,
+				786BD8632742B0C100329254 /* ModalHeight.swift */,
+				786BD8642742B0C100329254 /* UIViewController+ModalPresentable.swift */,
+				786BD8652742B0C100329254 /* ModalPresentable+Defaults.swift */,
+				786BD8662742B0C100329254 /* ModalPresentable.swift */,
+				786BD8672742B0C200329254 /* ModalPresentable+LayoutHelpers.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		786BD8682742B0C200329254 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8692742B0C200329254 /* ModalPresentationDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		786BD86A2742B0C200329254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				786BD86B2742B0C200329254 /* ModalContentContainer.swift */,
+				786BD86C2742B0C200329254 /* PanContainerView.swift */,
+				786BD86D2742B0C200329254 /* DimmedView.swift */,
+				786BD86E2742B0C200329254 /* ModalBackgroundColorSpec.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		786BD86F2742B0C200329254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8702742B0C200329254 /* DragIndicatorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		786BD8712742B0C200329254 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8722742B0C200329254 /* ModalPresentationAnimator.swift */,
+				786BD8732742B0C200329254 /* ModalTransitionStyle.swift */,
+				786BD8742742B0C200329254 /* ModalAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		786BD8752742B0C200329254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8762742B0C200329254 /* ModalPresentationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		786BD8772742B0C200329254 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8782742B0C200329254 /* UIView+ModalExtension.swift */,
+				786BD8792742B0C200329254 /* UIViewController+ModalPresenter.swift */,
+				786BD87A2742B0C200329254 /* UIScrollView+ModalExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		786BD87B2742B0C200329254 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				786BD87C2742B0C200329254 /* ModalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		786BD8922742B0C800329254 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				786BD85F2742AF7D00329254 /* Info.plist */,
+				786BD8582742ADB700329254 /* ModalPresentable.h */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		786BD8982742B36D00329254 /* ModalPresentableExample */ = {
+			isa = PBXGroup;
+			children = (
+				786BD8992742B36D00329254 /* AppDelegate.swift */,
+				786BD89D2742B36D00329254 /* ViewController.swift */,
+				786BD8A22742B37000329254 /* Assets.xcassets */,
+				786BD8A42742B37000329254 /* LaunchScreen.storyboard */,
+				786BD8A72742B37000329254 /* Info.plist */,
+			);
+			path = ModalPresentableExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		786BD8502742ADB700329254 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786BD8592742ADB800329254 /* ModalPresentable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		786BD8542742ADB700329254 /* ModalPresentable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 786BD85C2742ADB800329254 /* Build configuration list for PBXNativeTarget "ModalPresentable" */;
+			buildPhases = (
+				786BD8502742ADB700329254 /* Headers */,
+				786BD8512742ADB700329254 /* Sources */,
+				786BD8522742ADB700329254 /* Frameworks */,
+				786BD8532742ADB700329254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalPresentable;
+			productName = ModalPresentable;
+			productReference = 786BD8552742ADB700329254 /* ModalPresentable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		786BD8962742B36D00329254 /* ModalPresentableExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 786BD8A82742B37000329254 /* Build configuration list for PBXNativeTarget "ModalPresentableExample" */;
+			buildPhases = (
+				786BD8932742B36D00329254 /* Sources */,
+				786BD8942742B36D00329254 /* Frameworks */,
+				786BD8952742B36D00329254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalPresentableExample;
+			productName = ModalPresentableExample;
+			productReference = 786BD8972742B36D00329254 /* ModalPresentableExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		786BD84C2742ADB700329254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					786BD8542742ADB700329254 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					786BD8962742B36D00329254 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 786BD84F2742ADB700329254 /* Build configuration list for PBXProject "ModalPresentable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 786BD84B2742ADB700329254;
+			productRefGroup = 786BD8562742ADB700329254 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				786BD8542742ADB700329254 /* ModalPresentable */,
+				786BD8962742B36D00329254 /* ModalPresentableExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		786BD8532742ADB700329254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786BD8952742B36D00329254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786BD8A62742B37000329254 /* LaunchScreen.storyboard in Resources */,
+				786BD8A32742B37000329254 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		786BD8512742ADB700329254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786BD8862742B0C200329254 /* PanContainerView.swift in Sources */,
+				786BD8812742B0C200329254 /* ModalPresentable+Defaults.swift in Sources */,
+				786BD88D2742B0C200329254 /* ModalPresentationController.swift in Sources */,
+				786BD88F2742B0C200329254 /* UIViewController+ModalPresenter.swift in Sources */,
+				786BD8832742B0C200329254 /* ModalPresentable+LayoutHelpers.swift in Sources */,
+				786BD8852742B0C200329254 /* ModalContentContainer.swift in Sources */,
+				786BD8882742B0C200329254 /* ModalBackgroundColorSpec.swift in Sources */,
+				786BD88E2742B0C200329254 /* UIView+ModalExtension.swift in Sources */,
+				786BD88B2742B0C200329254 /* ModalTransitionStyle.swift in Sources */,
+				786BD8912742B0C200329254 /* ModalPresenter.swift in Sources */,
+				786BD88C2742B0C200329254 /* ModalAnimator.swift in Sources */,
+				786BD8802742B0C200329254 /* UIViewController+ModalPresentable.swift in Sources */,
+				786BD87F2742B0C200329254 /* ModalHeight.swift in Sources */,
+				786BD8892742B0C200329254 /* DragIndicatorModel.swift in Sources */,
+				786BD8872742B0C200329254 /* DimmedView.swift in Sources */,
+				786BD87D2742B0C200329254 /* ModalPresentationState.swift in Sources */,
+				786BD87E2742B0C200329254 /* StateY.swift in Sources */,
+				786BD8842742B0C200329254 /* ModalPresentationDelegate.swift in Sources */,
+				786BD88A2742B0C200329254 /* ModalPresentationAnimator.swift in Sources */,
+				786BD8822742B0C200329254 /* ModalPresentable.swift in Sources */,
+				786BD8902742B0C200329254 /* UIScrollView+ModalExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786BD8932742B36D00329254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786BD89E2742B36D00329254 /* ViewController.swift in Sources */,
+				786BD89A2742B36D00329254 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		786BD8A42742B37000329254 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				786BD8A52742B37000329254 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		786BD85A2742ADB800329254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		786BD85B2742ADB800329254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		786BD85D2742ADB800329254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModalPresentable/Support Files/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fkrasnovid.ModalPresentable;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		786BD85E2742ADB800329254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModalPresentable/Support Files/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fkrasnovid.ModalPresentable;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		786BD8A92742B37000329254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ModalPresentableExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fkrasnovid.ModalPresentableExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		786BD8AA2742B37000329254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ModalPresentableExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fkrasnovid.ModalPresentableExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		786BD84F2742ADB700329254 /* Build configuration list for PBXProject "ModalPresentable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				786BD85A2742ADB800329254 /* Debug */,
+				786BD85B2742ADB800329254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		786BD85C2742ADB800329254 /* Build configuration list for PBXNativeTarget "ModalPresentable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				786BD85D2742ADB800329254 /* Debug */,
+				786BD85E2742ADB800329254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		786BD8A82742B37000329254 /* Build configuration list for PBXNativeTarget "ModalPresentableExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				786BD8A92742B37000329254 /* Debug */,
+				786BD8AA2742B37000329254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 786BD84C2742ADB700329254 /* Project object */;
+}
